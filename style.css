@@ -1,6 +1,9 @@
 a{
    text-decoration: none;
 }
+a:hover{
+   color: #03a3a8;
+}
 .smaller-caption{
     font-size: 10px
 }
