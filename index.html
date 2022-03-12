@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
-<body><header>
+<html lang="en">
+    <head>
+        <!--Link to CSS --> 
+<link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
     <meta name="description" content="my programming portfolio">
-</header>
+</head>
+<body>
 <!--Intro --> 
    <div class="intro"> <center><h1>My Portfolio:</h1>
-    <p>Hi, I am a programmer, I am proficient in python, I can do a moderate amount of c# for the backend of unity, html & css (I coded this website in raw html and css). <br></p>
+    <p>Hi, my name is Sam. I am a programmer, I am proficient in python, I can do a moderate amount of c# for the backend of unity, html & css (I coded this website in raw html and css). <br></p>
     <h2>My journey:</h2>
 <p>    I first got intrested in programming when I was 6 and I started using the offline editor for <a href="https://scratch.mit.edu", target="blank">scratch</a>, on my 10th birthday (2017) I made an <a href="https://scratch.mit.edu/users/IronHead43/">my online scratch account</a> and I started sharing and viewing projects.<br>
     I shared some quite intresting projects, I made my own designs of a GUI OS called Iron OS, I made a 2D digger game called dig down and much more. After a year 1/2 on scratch it was now half way through 2018 I started playing minecraft, I collaborated with some people and decided to open up a <a href="https://www.minecraft.net/en-us/realms-plus/" target="blank">minecraft realm</a><br>
@@ -17,32 +20,52 @@
 <!--Links to my profiles --> 
     <div class="profiles", style="position:relative">
         <center><h2>My profiles:</h2><br><a href='https://play.google.com/store/apps/dev?id=8186313019301448070&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1', target="blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width=40%/></a>
-        <a href="https://github.com/IronHead43", target="blank"><img src="GitHub_Logo.png", width=40%></a></div>
+        <a href="https://github.com/IronHead43", target="blank"><img src="GitHub_Logo.png", width=40%></a></center></div>
         <div class="highlights">
+<!--Highlights-->
             <center><h2><b><mark>Highlights: </mark></b></h2></center><br>
-            <center><h1>Designing Central Processing Units</h1><img src="breadboard-computer.jpg", width=30%>
-               <img src="redstone-computer.png", width=30%><br><span class="smaller-caption", style="color:white;position:relative;right: 2%;">the remains of a discrete 4-bit transistor breadboard CPU I built in about June 2018 (when I was 10)</span>
-               <span class="smaller-caption", style="color:white;position:relative;left: 1%;">a redstone computer (in minecraft) I designed in October 2021, (when I was 13)<br></span><span style="color:white;position:relative;left: 15%;", class="smaller-caption"> you would actually be suprised how hard it is to build a CPU in a 3D enviroment<br>specs: 8-bit, 2 for short term memory, 8x8 screen, 8 bit binary display,<br> ALU can only do adding, 120 instructions, 40 lines of space to store programs</span><br>
-           <br><br><br>
-            <img src="jesting-jetpacker.png", width="60%"><br><iframe width="560" height="315" src="https://www.youtube.com/embed/hHQfxLg0P-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Jesting Jetpacker is a game I created for the Google play store and got accepted on March 2021. <a href="https://play.google.com/store/apps/details?id=com.pixel43.jestingjetpacker">Here is the download page</a>. I created this in unity, coded the backend in C#</h3></center><br><br><br>
-                <center>
+            <center><h1>Designing Central Processing Units</h1>
+                <!--Gallery-->
+                <div class="row">
+                    <div class="column">
+                      <img src="breadboard-computer.jpg" alt="Snow" style="width:100%">
+                    </div>
+                    <div class="column">
+                      <img src="redstone-computer.png" alt="Forest" style="width:100%">
+                    </div>
+                    <div class="column">
+                      <img src="LcLiteRedstoneCPU.jpg" alt="Mountains" style="width:100%">
+                    </div>
+                  </div>
+                  <br>
+                  <div id = "leftbox">
+                    Figure 0.1 The remains of a discrete 4-bit transistor breadboard CPU I built in about June 2018, when I was 10.
+                </div> 
+                  
+                <div id = "middlebox">
+                    Figure 0.2 A redstone computer (in a game called minecraft) I designed in October 2021, when I was 13. You would actually be suprised how hard it is to build a CPU in a 3D enviroment specs: 8-bit, 2 registers, 8x8 screen, 8 bit binary display, ALU can only do adding, 120 instructions, 40 lines of space to store programs
+                </div>
+                  
+                <div id = "rightbox">
+                    Figure 0.3 A 4-bit redstone CPU in minecraft I designed in 2019, when I was 11.
+                </div>
+<!--My Apps-->
+           <img src="jesting-jetpacker.png", width="60%"><br><iframe width="560" height="315" src="https://www.youtube.com/embed/hHQfxLg0P-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Jesting Jetpacker is a game I created for the Google play store and got accepted on March 2021. <a href="https://play.google.com/store/apps/details?id=com.pixel43.jestingjetpacker">Here is the download page</a>. I created this in unity, coded the backend in C#</h3></center><br><br><br>
+                    <center><h1>Ball Hop</h1>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/E_doF_Gnd5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h3>Ball Hop is a game I created for the Google play store and got accepted on 18th April 2021. <a href="https://play.google.com/store/apps/details?id=com.Pixel43.BallHop">Here is the download page</a>. I created this in unity, coded the backend in C#</h3><a href="https://sites.google.com/view/blocky-scratch/blocky", target="blank"><img src="Blockylogo.png", width=60%></a></center>
-                <h3><i>Blocky</i> a project by me and papageigames started in 2018 when I was 11, the idea was actually concieved on Dec 18, 2017 but papageigames never finished it he only created the block attaching to eachother script so i created drawing, made it so the scripts run, made saving, loading and a lot more and released it in 2018 when I was 12 on a hiatus from Lightcraft. <a href="https://scratch.mit.edu/projects/348937075/">link to original scratch project</a>.<br><br><center><img src="blocky screenshot.png", width=40%><br>
-                <center><img src="python-logo-generic.svg"><br>
-                    <h3>I can program well in python, here is a link to <a href="https://github.com/IronHead43/best-python-projects">some of my best projects</a> (such as a TicTacToe AI, encrypter ect). Here is a link to <a href="https://github.com/IronHead43/python">a github repo full of random projects I have made</a>. Most of the projects I upload are challenges from leetcode.com</h3>
-                    <img src="lc text logo.png", width=60%></center><br>
-                <h3>Lightcraft was a massive part of my life that taught me Leadership skills and some about programming, the server actually started in September 2019 just after my 11th birthday and ended in October 2020. I was playing a minecraft (a sandbox game) world and I invited some friends from online, we kept doing it and we built a city. I was the mayor and more and more people joined, there was about 4 main people who always joined so I decided to start a proper server hosted by Microsoft called a realm so we can play when I am not on
-                    for the first 6 months I didn't post i online I just asked people if they had friends and invited them and invited their friends. We built awesome things and I coded games for them to play and I learn a lot, I even built a full redstone computer which I dubbed the purple-bit. Then I discovered the realm had a code and I didn't have to manually invite everyone! I posted the code on the minecraft forums and a few people started joining, by then it had about 300 members.
-                    I then discovered a subreddit that let you share minecraft realms, I would occasianly post mine there, my realm had fully fledged games like the massive servers so lots of people wanted to join it and lots of people tried to rip it off and it quickly shot past 1000 members. I was working on many new stuff and I had a team on there of builders & moderators. 
-                    It was very hard when I had to fire one because they had gone corrupt for one reason or another and they some even started coups against me that was very stressful staying up calming hundreds of people down at 1am at 12 years old and other servers wanted me to fail so they could get more members and they often backstabbed me. One time I remember I took a weekend alway 
-                on camp with no internet, everyone assured me that it would be fine so I explained everything and put the best person in charge. But when I got back our name had been tarnished in the realm community and the other ones were trash talking us, I joined the realm and a hacker had set everything on fire but I had made a backup thankfully. Another time I float:left school and I turned on my phone to over <i>6000 notifications!</i> from discord (a social media service), something must be seriously messed up and I quickly checked my discord server
-            which had gone from 900 members to 300 in a few hours when I was trying to beat the record of 1000! <a href="readmore.html">read more</a></h3>
+                <h3><i>Blocky</i> a project by me and another user called papageigames from an online programming site, Scratch. We started in 2018 when I was 11, the idea was actually concieved on Dec 18, 2017 but papageigames never finished it he only created the block attaching to eachother script so i created drawing, made it so the scripts run, made saving, loading and a lot more and released it in 2018 when I was 12 on a hiatus from Lightcraft. <a href="https://scratch.mit.edu/projects/348937075/">link to original scratch project</a>. <a href="https://sites.google.com/view/blocky-scratch/blocky">link to sites.google.page for Blocky with download</a><br><br><center><img src="blocky screenshot.png", width=40%><br>
+                <!--LightCraft-->
+                    <center><img src="lc text logo.png", width=60%></center><br>
+                    <h3><a href = "https://github.com/IronHead43/lcWebsite">Link to decaprated LightCraft Website (github repo)</a>. Lightcraft was a massive part of my life that taught me Leadership skills and some about programming, the server actually started in September 2019 just after my 11th birthday and ended in October 2020. I was playing a minecraft (a sandbox game) world and I invited some friends from online, we kept doing it and we built a city. I was the mayor and more and more people joined, there was about 4 main people who always joined so I decided to start a proper server hosted by Microsoft called a realm so we can play when I am not online.
+                        For the first 6 months I didn't share it online I just asked members if they had friends and invited them and invited their friends. We built awesome things and I coded games for them to play and I learn a lot, I even built a full redstone computer which I dubbed the purple-bit (see Fig 0.3). Then I realised the realm had a code that people could enter in to join and I didn't have to manually invite everyone! I posted the code on the minecraft forums and a few people started joining, by then it already had about 300 members.
+                        I then discovered a subreddit (communities on a social media called Reddit) that let you share minecraft realms, I would occasianly share LightCraft there, my realm had fully fledged games like the massive servers so lots of people wanted to join it and lots of people tried to rip it off and it quickly shot past 1000 members. I was working on many new stuff and I had a team on there of builders & moderators. 
+                        It started getting hard, one time I had to fire someone because they had gone corrupt for one reason or another and they some even started coups against me that was very stressful staying up calming hundreds of people down at 1am at 12 years old and other servers wanted me to fail so they could get more members and they often backstabbed me. One time I remember I took a weekend away 
+                    on a school trip with no internet, everyone assured me that it would be fine so I explained everything and put the best person in charge. But when I got back our name had been tarnished in the realm community and the other ones were trash talking us, I joined the realm and a hacker had set everything on fire but I had made a backup thankfully. Another time I left school and I turned on my phone to over <i>6000 notifications!</i> from discord (a social media service), I was thinking something must be seriously messed up and I quickly checked the LightCraft discord server
+                which had gone from 900 members to 300 in a few hours when I was trying to beat the record of 1000 members! <a href="readmore.html">read more</a></h3>
                     <center><h2><a href="mailto:samjmv003@gmai.com" class="email">CONTACT ME</a></h2><br><br></center>
                 </div>
         
 </center>
-<!--Link to CSS --> 
-<link rel="stylesheet" href="style.css">
 </body>
 </html>
