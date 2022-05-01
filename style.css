@@ -1,105 +1,138 @@
 a{
-   text-decoration: none;
-}
-a:hover{
-   color: #0e7275;
-}
-.smaller-caption{
-    font-size: 10px
-}
-.caption{
-    font-size: 12px;
-}
-.email{
-    color: rgb(230, 230, 230);
-    font-size: 20px;
-    padding: 15px;
-    text-shadow: 0px 2px 0px rgba(30, 30, 30, 0.8);
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    background: rgb(0, 172, 183);
-    background: -moz-linear-gradient(54deg, rgb(0, 172, 183) 52%, rgb(119, 255, 160) 100%);
-    background: -webkit-linear-gradient(54deg, rgb(0, 172, 183) 52%, rgb(119, 255, 160) 100%);
-    background: -o-linear-gradient(54deg, rgb(0, 172, 183) 52%, rgb(119, 255, 160) 100%);
-    background: -ms-linear-gradient(54deg, rgb(0, 172, 183) 52%, rgb(119, 255, 160) 100%);
-    background: linear-gradient(324deg, rgb(0, 172, 183) 52%, rgb(119, 255, 160) 100%);
-    -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 6px 5px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 6px 5px rgba(50, 50, 50, 0.75);
-}
-mark{
-    background-color: rgb(207, 10, 165);
-    color: white;
-}
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-h3{
-    margin: 50px;
-}
-h1{
-    font-family: sans-serif;
-    color:white;
-}
-h2, h3{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-}
-.highlights{
-    display:inline-block;
-    position:relative;
-}
-.profiles{
-    background-color: #235e99;
-    display:inline-block;
-    position:relative;
-}
-.highlights{
-    background-color: #06acc9;
-}
-.intro{
-    background-color: #1c70c4;
-    display:inline-block;
-    position:relative;
-    width: 100%;
-}
-.column {
-float: left;
-width: 33.33%;
-padding: 5px;
-}
-
-
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
-.row {
-display: flex;
-}
-
-.column {
-flex: 33.33%;
-padding: 5px;
-}
-#leftbox {
-    float:left; 
-    width:25%;
-    height:280px;
-    color:white;
-}
-#middlebox{
-    float:left; 
-    width:50%;
-    height:280px;
-    color:white;
-}
-#rightbox{
-    float:right;
-    width:25%;
-    height:280px;
-    color:white;
-}
+    text-decoration: none;
+ }
+ a:hover{
+    color: #0e7275;
+ }
+ .smaller-caption{
+     font-size: 10px
+ }
+ .caption{
+     font-size: 12px;
+ }
+ .leftbox{
+     position: absolute;
+     left: 30px;
+ }
+ .middlebox{
+     position: absolute;
+     text-align: center;
+ }
+ .rightbox{
+     position: absolute;
+     right: 30px;
+ }
+ .gallery:hover{
+     transform: scale(1.05);
+ }
+ .gallery{
+     width:90%;
+     transition: all .15s ease-in-out; 
+     border-radius:20px;
+     box-shadow: 10px 10px 5px rgb(62, 61, 61);
+ }
+ mark{
+     background-color: rgb(207, 10, 165);
+     color: white;
+ }
+ p{
+     font-family: Arial, Helvetica, sans-serif;
+     color: white;
+ }
+ h3{
+     margin: 50px;
+ }
+ h1{
+     font-family: sans-serif;
+     color:white;
+ }
+ h2, h3{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: white;
+ }
+ .highlights{
+     display:inline-block;
+     position:relative;
+ }
+ .highlights{
+     background-color: #4959E6;
+ }
+ .intro{
+     display: flex;
+     flex-flow: column;
+     height: 100%;
+     background-color: #192169;
+     display:inline-block;
+     position:relative;
+     width: 100%;
+ }
+ .column {
+ float: left;
+ width: 33.33%;
+ padding: 5px;
+ }
+ body{
+     height: 100%;
+     margin: 0;
+ }
+ 
+ .row::after {
+ content: "";
+ clear: both;
+ display: table;
+ }
+ .row {
+ display: flex;
+ }
+ 
+ 
+ #leftbox {
+     float:left; 
+     width:25%;
+     height:280px;
+     color:white;
+ }
+ #middlebox{
+     float:left; 
+     width:50%;
+     height:280px;
+     color:white;
+ }
+ #rightbox{
+     float:right;
+     width:25%;
+     height:280px;
+     color:white;
+ }
+ .fa-discord{
+     background-color: #5865F2;
+ }
+ .fa-twitter{
+     background-color: #00ACEE;
+ }
+ .contact {
+     transition: all .15s ease-in-out; 
+     font-size: 30px;
+     padding: 20px;
+     border-radius: 18px;
+     box-sizing: border-box;
+     text-shadow: 4px 4px black;
+     outline: black;
+   }
+ .fa-google-play{
+     background-color:#333231;
+     color:white;
+ }
+ .fa-github{
+     background-color: #27272A;
+ }
+ .fa-envelope{
+     background-color: red;
+ }
+ .fa-linkedin{
+     background-color: #0072b1
+ }
+ .contact:hover {
+     transform: scale(1.2); 
+ }
+ 
