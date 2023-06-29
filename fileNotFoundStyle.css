@@ -1,5 +1,5 @@
 body{
-    background-color: #E36283;
+    background-color: #3540A6;
     text-align: center;
 }
 h1{
@@ -13,12 +13,12 @@ h1{
     text-shadow: 5px 5px #444444;
 }
 a {
-    background: #E36282;
-    background-image: -webkit-linear-gradient(top, #E36282, #F06789);
-    background-image: -moz-linear-gradient(top, #E36282, #F06789);
-    background-image: -ms-linear-gradient(top, #E36282, #F06789);
-    background-image: -o-linear-gradient(top, #E36282, #F06789);
-    background-image: -webkit-gradient(to bottom, #E36282, #F06789);
+    background: #6C90E6;
+    background-image: -webkit-linear-gradient(top, #6C90E6, #7298F2);
+    background-image: -moz-linear-gradient(top, #6C90E6, #7298F2);
+    background-image: -ms-linear-gradient(top, #6C90E6, #7298F2);
+    background-image: -o-linear-gradient(top, #6C90E6, #7298F2);
+    background-image: -webkit-gradient(to bottom, #6C90E6, #7298F2);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -26,10 +26,7 @@ a {
     font-family: Times New Roman;
     font-size: 50px;
     font-weight: 100;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
     -webkit-box-shadow: inset -4px -4px 20px 0 #000000;
     -moz-box-shadow: inset -4px -4px 20px 0 #000000;
     box-shadow: inset -4px -4px 20px 0 #000000;
@@ -42,14 +39,14 @@ a {
  }
  
 a:hover {
+    background: #4568E6;
+    background-image: -webkit-linear-gradient(top, #4568E6, #3D5CCC);
+    background-image: -moz-linear-gradient(top, #4568E6, #3D5CCC);
+    background-image: -ms-linear-gradient(top, #4568E6, #3D5CCC);
+    background-image: -o-linear-gradient(top, #4568E6, #3D5CCC);
+    background-image: -webkit-gradient(to bottom, #4568E6, #3D5CCC);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     text-decoration: none;
-        background: #B04C65;
-    background-image: -webkit-linear-gradient(top, #B04C65, #D95D7C);
-    background-image: -moz-linear-gradient(top, #B04C65, #D95D7C);
-    background-image: -ms-linear-gradient(top, #B04C65, #D95D7C);
-    background-image: -o-linear-gradient(top, #B04C65, #D95D7C);
-    background-image: -webkit-gradient(to bottom, #B04C65, #D95D7C);
- }
+}

@@ -3,7 +3,7 @@ function csharpCommits() {
     .then(response => response.json())
     .then(data => { 
       const parseText = String(data[0].total);
-      document.getElementById("totalCommitsCSharp").innerHTML = parseText + " contributions in the last year";
+      document.getElementById("totalCommitsCSharp").innerHTML = parseText + " contributions";
     })
     .catch(error => {
       console.error("Error fetching C# commits:", error);
@@ -15,7 +15,7 @@ function pythonCommits() {
     .then(response => response.json())
     .then(data => {
       const parseText = String(data[0].total);
-      document.getElementById("totalCommitsPython").innerHTML = parseText + " contributions in the last year";
+      document.getElementById("totalCommitsPython").innerHTML = parseText + " contributions";
     })
     .catch(error => {
       console.error("Error fetching Python commits:", error);
