@@ -1,26 +1,26 @@
 function csharpCommits() {
-    parseText=String(this.responseText);
-    i=19;
-    while (parseText.slice(i,i+1) != ","){
-        i+=1;
-    }
-    parseText=parseText.slice(19,i);
-    document.getElementById("totalCommitsCSharp").innerHTML = parseText + " contributions in last year";
-  }
+  fetch('https://api.github.com/repositories/331731691/stats/contributors')
+    .then(response => response.json())
+    .then(data => { 
+      const parseText = String(data[0].total);
+      document.getElementById("totalCommitsCSharp").innerHTML = parseText + " contributions";
+    })
+    .catch(error => {
+      console.error("Error fetching C# commits:", error);
+    });
+}
+
 function pythonCommits() {
-    parseText=String(this.responseText);
-    i=19;
-    while (parseText.slice(i,i+1) != ","){
-        i+=1;
-    }
-    parseText=parseText.slice(19,i);
-    document.getElementById("totalCommitsPython").innerHTML = parseText + " contributions in last year";
-  }
-  var request = new XMLHttpRequest();
-  request.onload = pythonCommits;
-  request.open('get', 'https://api.github.com/repos/IronHead43/python/stats/contributors', true)
-  request.send()
-  var request = new XMLHttpRequest();
-  request.onload = csharpCommits;
-  request.open('get', 'https://api.github.com/repos/IronHead43/CSharp/stats/contributors', true)
-  request.send()
+  fetch('https://api.github.com/repositories/331721824/stats/contributors')
+    .then(response => response.json())
+    .then(data => {
+      const parseText = String(data[0].total);
+      document.getElementById("totalCommitsPython").innerHTML = parseText + " contributions";
+    })
+    .catch(error => {
+      console.error("Error fetching Python commits:", error);
+    });
+}
+
+pythonCommits();
+csharpCommits();
