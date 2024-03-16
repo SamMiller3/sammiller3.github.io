@@ -12,3 +12,41 @@ h1{
     font-size: 80px;
     text-shadow: 5px 5px #444444;
 }
+a {
+    background: #6C90E6;
+    background-image: -webkit-linear-gradient(top, #6C90E6, #7298F2);
+    background-image: -moz-linear-gradient(top, #6C90E6, #7298F2);
+    background-image: -ms-linear-gradient(top, #6C90E6, #7298F2);
+    background-image: -o-linear-gradient(top, #6C90E6, #7298F2);
+    background-image: -webkit-gradient(to bottom, #6C90E6, #7298F2);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Times New Roman;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 30px;
+    -webkit-box-shadow: inset -4px -4px 20px 0 #000000;
+    -moz-box-shadow: inset -4px -4px 20px 0 #000000;
+    box-shadow: inset -4px -4px 20px 0 #000000;
+    text-shadow: 8px 8px 20px #000000;
+    border: solid #D59BA9 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+
+a:hover {
+    background: #4568E6;
+    background-image: -webkit-linear-gradient(top, #4568E6, #3D5CCC);
+    background-image: -moz-linear-gradient(top, #4568E6, #3D5CCC);
+    background-image: -ms-linear-gradient(top, #4568E6, #3D5CCC);
+    background-image: -o-linear-gradient(top, #4568E6, #3D5CCC);
+    background-image: -webkit-gradient(to bottom, #4568E6, #3D5CCC);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
