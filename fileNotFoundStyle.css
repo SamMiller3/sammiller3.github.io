@@ -37,7 +37,7 @@ a {
     cursor: pointer;
     text-align: center;
  }
- 
+
 a:hover {
     background: #4568E6;
     background-image: -webkit-linear-gradient(top, #4568E6, #3D5CCC);
