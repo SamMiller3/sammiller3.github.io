@@ -26,22 +26,22 @@
             <a class="contact" href="mailto:samjmv003@gmail.com", target="blank"><i class="fa-solid fa-envelope contact", style="color:white"></i></a>
             <a href="https://www.linkedin.com/in/samuel-miller-abb232204/", target="blank"><i class="fa-brands fa-linkedin contact", style="color:white;"></i></a></center>
             <!--Intro --> 
-            <center><h1>My Portfolio:</h1>
+            <center><h1 style="color:white">My Portfolio:</h1>
         <p>Hi! my name is Sam. I am a programmer, I am proficient in python, I can also do a moderate amount of c#. I designed this website in pure html,css,js.<br> I have undertaken several personal projects over the years from designing my own mobile games in Unity, to designing my own neural network in python.<br></p>
     </center></div>
     <!--Gallery-->
     <div class="gallery-container">
         <div class="gallery" id="gallery">
-            <div class="slide" style="background-color: #3498db;" data-target="section1">
-                <h2>Personal Projects:</h2>
+            <div class="slide" style="background-color: #2c3e50" data-target="section1">
+                <h2 style="color:white">Personal Projects:</h2>
                 <p>Personal Projects I have done</p>
             </div>
-            <div class="slide" style="background-color: #e74c3c;" data-target="section2">
-                <h2>Professional Experience:</h2>
+            <div class="slide" style="background-color: #34495e;" data-target="section2">
+                <h2 style="color:white">Professional Experience:</h2>
                 <p>Work experience</p>
             </div>
-            <div class="slide" style="background-color: #2ecc71;" data-target="section3">
-                <h2>Education:</h2>
+            <div class="slide" style="background-color: #4C6B8B;" data-target="section3">
+                <h2 style="color:white">Education:</h2>
                 <p>Studying maths and computer science.</p>
             </div>
         </div>
@@ -49,11 +49,11 @@
         <button class="nav-button next" onclick="slide(1)">&gt;</button>
     </div>
 
-    <div class="content">
+    <div class="content" style="background-color:#f5f5f5; color:#333333">
         <section id="section1">
           <div class="personal-projects">
             <!--Personal Projects-->
-                        <center><h1 style="font-size:40px"><b>Personal Projects: </b></h1><br>
+                        <center><h1 style="font-size:40px; color:#2c3e50"><b>Personal Projects: </b></h1><br>
                           <!--Neural Networks-->
                           <img src="tensorflow.png", alt="tensorflow logo"><br>
                           <p>For my Extended Project Qualification (EPQ) I designed a Recurrent Neural Network in python using the tensorflow library to predict trends in the stock market. I then wrote a report comparing it to different more traditional regression models. I have written several other smaller projects using tensorflow such as one to predict primes and one to predict text.</p>
@@ -111,11 +111,67 @@
 
 
         </section>
-        <!--Other sections-->
         <section id="section2"><h2>Professional Experience</h2><p>LeadPro LLC - I worked for LeadPro, an official minecraft partner, programming games for the minecraft marketplace between July 2020 to Sepember 2020.<br><br> (more coming soon....)</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <section id="section3"><h2>Education</h2><p>I am currently studying A level Maths, Further Maths, Computer Science and am predicted 3A*s. (more coming soon...)</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 
+    <script>
+        const gallery = document.getElementById('gallery');
+        const slides = gallery.getElementsByClassName('slide');
+        let currentIndex = 0;
+        let startX;
+        let scrollLeft;
 
+        function slide(direction) {
+            currentIndex = (currentIndex + direction + slides.length) % slides.length;
+            updateGallery();
+        }
+
+        function updateGallery() {
+            gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function autoSlide() {
+            slide(1);
+            setTimeout(autoSlide, 5000); // Wait 5 seconds before moving to the next slide
+        }
+
+        // Start the auto-sliding after a 5-second initial delay
+        setTimeout(autoSlide, 5000);
+
+        gallery.addEventListener('mousedown', (e) => {
+            startX = e.pageX - gallery.offsetLeft;
+            scrollLeft = gallery.scrollLeft;
+        });
+
+        gallery.addEventListener('mousemove', (e) => {
+            if (!startX) return;
+            const x = e.pageX - gallery.offsetLeft;
+            const walk = (x - startX) * 2;
+            const slideWidth = slides[0].offsetWidth;
+            const slidesMoved = Math.round(walk / slideWidth);
+            currentIndex = (currentIndex - slidesMoved + slides.length) % slides.length;
+            updateGallery();
+        });
+
+        gallery.addEventListener('mouseup', () => {
+            startX = null;
+        });
+
+        gallery.addEventListener('mouseleave', () => {
+            startX = null;
+        });
+
+        for (let slide of slides) {
+            slide.addEventListener('click', function() {
+                this.style.filter = 'brightness(0.6)';
+                setTimeout(() => {
+                    this.style.filter = 'brightness(1)';
+                    const targetId = this.getAttribute('data-target');
+                    document.getElementById(targetId).scrollIntoView({behavior: 'smooth'});
+                }, 300);
+            });
+        }
+    </script>
 </body>
 </html>

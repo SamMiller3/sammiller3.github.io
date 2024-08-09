@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap');
+
 a{
     text-decoration: none;
     color: #2BD6D5; 
@@ -64,14 +66,11 @@ margin-left:30px;
     height: 100%;
      background-color: #3540A6;
  }
- .highlights{
-     background-color: #3837D4;
- }
  .intro{
      display: flex;
      flex-flow: column;
      height: 100%;
-     background-color: #192169;
+     background-color: #1a2a3a;
      display:inline-block;
      position:relative;
      width: 100%;
@@ -88,6 +87,12 @@ margin-left:30px;
  body{
      height: 100%;
      margin: 0;
+     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-size:larger;
+        margin: 0;
+        padding: 0;
  }
  
  .row::after {
@@ -195,11 +200,6 @@ margin-left:30px;
     margin: 0;
   }
 
-
-
-
-
-
  nav {
       white-space: nowrap;
       overflow: hidden;
@@ -224,11 +224,25 @@ margin-left:30px;
     button:hover {
       background-color: #777;
     }
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+    h1, h2, h3 {
+        font-family: 'Montserrat', sans-serif;
+        color: #2c3e50;
+      }
+   
+      h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+      }
+   
+      h2 {
+        font-size: 2em;
+        font-weight: 600;
+      }
+   
+      h3 {
+        font-size: 1.5em;
+        font-weight: 400;
+      }
     .gallery-container {
         width: 100%;
         overflow: hidden;
@@ -282,3 +296,56 @@ margin-left:30px;
     .content {
         padding: 20px;
     }
+
+    @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+   
+        h1 {
+          font-size: 2em;
+        }
+   
+        h2 {
+          font-size: 1.75em;
+        }
+   
+        h3 {
+          font-size: 1.25em;
+        }
+    }
+    .section {
+        padding: 60px 0;
+        margin-bottom: 40px;
+      }
+   
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+   
+      p {
+        margin-bottom: 20px;
+      }
+   
+      /* Add more space between major sections */
+      #section1, #section2, #section3 {
+        margin-top: 80px;
+      }
+   
+      /* Responsive layout */
+      @media (max-width: 768px) {
+        .section {
+          padding: 40px 0;
+          margin-bottom: 30px;
+        }
+   
+        .container {
+          width: 95%;
+        }
+   
+        #section1, #section2, #section3 {
+          margin-top: 60px;
+        }
+      }
