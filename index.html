@@ -6,72 +6,12 @@
         <!-- fontawesome -->
         <script src="https://kit.fontawesome.com/0bfe4ad5c1.js" crossorigin="anonymous"></script>
         <!--Link to CSS --> 
-<link rel="stylesheet" href="style.css">
-<!--Link to javascript-->
-<script src="commits.js"></script>
-    <!--title-->
-    <title>My Portfolio</title>
-    <meta name="description" content="my programming portfolio">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .gallery-container {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-        }
-        .gallery {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-        .slide {
-            min-width: 100%;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-            cursor: pointer;
-            transition: filter 0.3s ease;
-        }
-        .slide:hover {
-            filter: brightness(0.8);
-        }
-        .slide h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .slide p {
-            font-size: 1.2em;
-            max-width: 80%;
-        }
-        .nav-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .prev {
-            left: 10px;
-        }
-        .next {
-            right: 10px;
-        }
-        .content {
-            padding: 20px;
-        }
-    </style>
+        <link rel="stylesheet" href="style.css">
+        <!--Link to javascript-->
+          <script src="commits.js"></script>
+      <!--title-->
+      <title>My Portfolio</title>
+      <meta name="description" content="my programming portfolio">
 </head>
 <body>
   <div class="wrapper">
@@ -89,6 +29,7 @@
             <center><h1>My Portfolio:</h1>
         <p>Hi! my name is Sam. I am a programmer, I am proficient in python, I can also do a moderate amount of c#. I designed this website in pure html,css,js.<br> I have undertaken several personal projects over the years from designing my own mobile games in Unity, to designing my own neural network in python.<br></p>
     </center></div>
+    <!--Gallery-->
     <div class="gallery-container">
         <div class="gallery" id="gallery">
             <div class="slide" style="background-color: #3498db;" data-target="section1">
@@ -111,9 +52,9 @@
     <div class="content">
         <section id="section1">
           <div class="personal-projects">
-            <!--Highlights-->
+            <!--Personal Projects-->
                         <center><h1 style="font-size:40px"><b>Personal Projects: </b></h1><br>
-
+                          <!--Neural Networks-->
                           <img src="tensorflow.png", alt="tensorflow logo"><br>
                           <p>For my Extended Project Qualification (EPQ) I designed a Recurrent Neural Network in python using the tensorflow library to predict trends in the stock market. I then wrote a report comparing it to different more traditional regression models. I have written several other smaller projects using tensorflow such as one to predict primes and one to predict text.</p>
                             <br><br><br><br>
@@ -122,12 +63,10 @@
                             <h2>Mobile Apps:</h2>
                             <div class="video-container">
                                 <div class="video">
-                                  <!-- Replace the src attribute with the embed code for your first video -->
                                   <iframe style="border-radius:15px;" width="560" height="315" src="https://www.youtube.com/embed/1H9mcVTjLgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 
                                 <div class="video">
-                                  <!-- Replace the src attribute with the embed code for your second video -->
                                   <iframe width="560" height="315" style="border-radius:15px;" src="https://www.youtube.com/embed/E_doF_Gnd5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                               </div>
@@ -165,73 +104,18 @@
             
                                
                               <br><br><br><br><br><br>
+                              <!--Lightcraft-->
                                 <center><div id="LightCraft-desc"></div><img src="lc text logo.png", width=60%></center><br>
                                 <h3><a href = "https://github.com/IronHead43/lcWebsite">Link to decaprated LightCraft Website (github repo)</a>.  LightCraft was a massive minecraft server with tens of thousands of members that I created, led, and did programming for between 2018-2021. It taught me a variety of skills including problem solving and leadership skills.</h3>
                             </div>
 
 
         </section>
+        <!--Other sections-->
         <section id="section2"><h2>Professional Experience</h2><p>LeadPro LLC - I worked for LeadPro, an official minecraft partner, programming games for the minecraft marketplace between July 2020 to Sepember 2020.<br><br> (more coming soon....)</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <section id="section3"><h2>Education</h2><p>I am currently studying A level Maths, Further Maths, Computer Science and am predicted 3A*s. (more coming soon...)</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 
-    <script>
-        const gallery = document.getElementById('gallery');
-        const slides = gallery.getElementsByClassName('slide');
-        let currentIndex = 0;
-        let startX;
-        let scrollLeft;
 
-        function slide(direction) {
-            currentIndex = (currentIndex + direction + slides.length) % slides.length;
-            updateGallery();
-        }
-
-        function updateGallery() {
-            gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        function autoSlide() {
-            slide(1);
-            setTimeout(autoSlide, 5000); // Wait 5 seconds before moving to the next slide
-        }
-
-        // Start the auto-sliding after a 5-second initial delay
-        setTimeout(autoSlide, 5000);
-
-        gallery.addEventListener('mousedown', (e) => {
-            startX = e.pageX - gallery.offsetLeft;
-            scrollLeft = gallery.scrollLeft;
-        });
-
-        gallery.addEventListener('mousemove', (e) => {
-            if (!startX) return;
-            const x = e.pageX - gallery.offsetLeft;
-            const walk = (x - startX) * 2;
-            const slideWidth = slides[0].offsetWidth;
-            const slidesMoved = Math.round(walk / slideWidth);
-            currentIndex = (currentIndex - slidesMoved + slides.length) % slides.length;
-            updateGallery();
-        });
-
-        gallery.addEventListener('mouseup', () => {
-            startX = null;
-        });
-
-        gallery.addEventListener('mouseleave', () => {
-            startX = null;
-        });
-
-        for (let slide of slides) {
-            slide.addEventListener('click', function() {
-                this.style.filter = 'brightness(0.6)';
-                setTimeout(() => {
-                    this.style.filter = 'brightness(1)';
-                    const targetId = this.getAttribute('data-target');
-                    document.getElementById(targetId).scrollIntoView({behavior: 'smooth'});
-                }, 300);
-            });
-        }
-    </script>
 </body>
 </html>
