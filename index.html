@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- fontawesome -->
         <script src="https://kit.fontawesome.com/0bfe4ad5c1.js" crossorigin="anonymous"></script>
         <!--Link to CSS --> 
@@ -10,93 +12,226 @@
     <!--title-->
     <title>My Portfolio</title>
     <meta name="description" content="my programming portfolio">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .gallery {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: filter 0.3s ease;
+        }
+        .slide:hover {
+            filter: brightness(0.8);
+        }
+        .slide h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .slide p {
+            font-size: 1.2em;
+            max-width: 80%;
+        }
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
 </head>
-<div class="wrapper">
 <body>
-    <!--contacts-->
-   <div class="intro" width="100%">
-    <br><br><br><br>
-    <center><a class="contact" href="https://discord.com/channels/@me/635745269979283456", target="blank"><i class="fa-brands fa-discord contact", style="color:white"></i></a> 
-        <a class="contact" href="https://twitter.com/darthmakroth", target="blank"><i class="fa-brands fa-twitter contact", style="color:white"></i></a>
-        <a class="contact" href="https://github.com/IronHead43", target="blank"><i class="fa-brands fa-github contact", style="color:white"></i></a>
-        <a class="contact" href="https://play.google.com/store/apps/dev?id=8186313019301448070&hl=en_GB&gl=US", target="blank"><i class="fa-brands fa-google-play contact"></i></a>
-        <a class="contact" href="mailto:samjmv003@gmail.com", target="blank"><i class="fa-solid fa-envelope contact", style="color:white"></i></a>
-        <a href="https://www.linkedin.com/in/samuel-miller-abb232204/", target="blank"><i class="fa-brands fa-linkedin contact", style="color:white;"></i></a></center>
-        <!--Intro --> 
-        <center><h1>My Portfolio:</h1>
-    <p>Hi, my name is Sam. I am a programmer, I am proficient in python, I can do a moderate amount of c# for the backend of unity, html & css (I coded this website in raw html and css). <br></p>
-    <h2>My journey:</h2>
-<p>    I first got intrested in programming when I was 6 and I started using the offline editor for <a href="https://scratch.mit.edu", target="blank">scratch</a>, on my 10th birthday (2017) I made an <a href="https://scratch.mit.edu/users/IronHead43/">my online scratch account</a> and I started sharing and viewing projects.<br>
-    Some projects I shared included, designs of a GUI OS called Iron OS, and a 2D digger game called dig down. After a year 1/2 on scratch it was now half way through 2018 I started playing minecraft, I collaborated with some people and decided to open up a <a href="https://www.minecraft.net/en-us/realms-plus/" target="blank">minecraft realm</a><br>
-    I got really intrested by command blocks (like 3D programming) & redstone (like electricity) and started creating games with command blocks for people to play and massive redstone computers that could run arithmatic calculations. I also coded a website for the server that taught me html and css (which I made a <a href="https://github.com/IronHead43/lcWebsite" target="blank">github repo</a> for after I shut it down).<br>
-    Half way through running my realm/server (called LightCraft) I returned to scratch for a few months and I finished my biggest scratch project I ever made, which I had started in 2018 called Blocky that was a block based programming language that ran inside of scratch. I actually made a <a href="https://sites.google.com/view/blocky-scratch/blocky">website for it in google sites as well</a>. this is the <a href="https://scratch.mit.edu/projects/348937075/">original project</a><br>
-    I already had blender3d, unity & python installed on my computer after that and I knew roughly how python worked so I started creating apps in unity and publishing them to the google playstore. I have also been working on python projects and uploading them to a <a href="https://github.com/IronHead43/python", target="blank">github repo</a><br></p>
-</center></div>
-<!--github-->
-<div class="myGithub">
-    <center>
-        <h1>My Github</h1></center>
-        <!--Repos-->  
-            <p><a href="https://github.com/IronHead43/python" target="blank"><img class="py gallery" src="python-logo.png" alt="My python projects" style="width:40%"></a>
-            <a href="https://github.com/IronHead43/CSharp" target="blank"><img class="un gallery" src="cSharpUnity.png" alt="My C#/Unity3D projects" style="width:40%;"></p></a>
-                <div class="clearfix">
-                    <div class="desc">
-                    <p style="margin-left:25%">A repository of my C#/Unity3D projects</p>
-                    </div>
-                    <div class="desc">
-                    <p style="margin-left:30%">A repository of my python projects</p>
-                    </div>
-                  </div>
+  <div class="wrapper">
+    <body>
+        <!--contacts-->
+       <div class="intro" width="100%">
+        <br><br><br><br>
+        <center><a class="contact" href="https://discord.com/channels/@me/635745269979283456", target="blank"><i class="fa-brands fa-discord contact", style="color:white"></i></a> 
+            <a class="contact" href="https://twitter.com/darthmakroth", target="blank"><i class="fa-brands fa-twitter contact", style="color:white"></i></a>
+            <a class="contact" href="https://github.com/IronHead43", target="blank"><i class="fa-brands fa-github contact", style="color:white"></i></a>
+            <a class="contact" href="https://play.google.com/store/apps/dev?id=8186313019301448070&hl=en_GB&gl=US", target="blank"><i class="fa-brands fa-google-play contact"></i></a>
+            <a class="contact" href="mailto:samjmv003@gmail.com", target="blank"><i class="fa-solid fa-envelope contact", style="color:white"></i></a>
+            <a href="https://www.linkedin.com/in/samuel-miller-abb232204/", target="blank"><i class="fa-brands fa-linkedin contact", style="color:white;"></i></a></center>
+            <!--Intro --> 
+            <center><h1>My Portfolio:</h1>
+        <p>Hi! my name is Sam. I am a programmer, I am proficient in python, I can also do a moderate amount of c#. I designed this website in pure html,css,js.<br> I have undertaken several personal projects over the years from designing my own mobile games in Unity, to designing my own neural network in python.<br></p>
+    </center></div>
+    <div class="gallery-container">
+        <div class="gallery" id="gallery">
+            <div class="slide" style="background-color: #3498db;" data-target="section1">
+                <h2>Personal Projects:</h2>
+                <p>Personal Projects I have done</p>
+            </div>
+            <div class="slide" style="background-color: #e74c3c;" data-target="section2">
+                <h2>Professional Experience:</h2>
+                <p>Work experience</p>
+            </div>
+            <div class="slide" style="background-color: #2ecc71;" data-target="section3">
+                <h2>Education:</h2>
+                <p>Studying maths and computer science.</p>
+            </div>
+        </div>
+        <button class="nav-button prev" onclick="slide(-1)">&lt;</button>
+        <button class="nav-button next" onclick="slide(1)">&gt;</button>
+    </div>
 
-<div class="clearfix">
-    <div class="desc">
-        <b><p id="totalCommitsCSharp" style="margin-left:25%">Loading...</p></b>
+    <div class="content">
+        <section id="section1">
+          <div class="personal-projects">
+            <!--Highlights-->
+                        <center><h1 style="font-size:40px"><b>Personal Projects: </b></h1><br>
+
+                          <img src="tensorflow.png", alt="tensorflow logo"><br>
+                          <p>For my Extended Project Qualification (EPQ) I designed a Recurrent Neural Network in python using the tensorflow library to predict trends in the stock market. I then wrote a report comparing it to different more traditional regression models. I have written several other smaller projects using tensorflow such as one to predict primes and one to predict text.</p>
+                            <br><br><br><br>
+                            
+                            <!--My Apps-->
+                            <h2>Mobile Apps:</h2>
+                            <div class="video-container">
+                                <div class="video">
+                                  <!-- Replace the src attribute with the embed code for your first video -->
+                                  <iframe style="border-radius:15px;" width="560" height="315" src="https://www.youtube.com/embed/1H9mcVTjLgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <div class="video">
+                                  <!-- Replace the src attribute with the embed code for your second video -->
+                                  <iframe width="560" height="315" style="border-radius:15px;" src="https://www.youtube.com/embed/E_doF_Gnd5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                              <h3>In 2021 I created several mobile games for the mobile Android platform, available on the google play store. I programmed these games in C#/Unity. This taught me skills in mobile app development, releasing different versions of games for the google playstore, and optimizing apps across devices. The above games are available on the google play store for free. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.pixel43.jestingjetpacker">Jesting Jetpacker</a>. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.Pixel43.BallHop">Ball Hop</a>.</h3>
+                           <br>
+                           
+                           <a href="https://github.com/IronHead43/CSharp" target="blank"><img class="unity-button" src="cSharpUnity.png" alt="My C#/Unity3D projects" style="width:40%;"></a>
+                           <br><br>
+                           <b><p id="totalCommitsCSharp">Loading...</p></b>
+                           <p >A repository of my C#/Unity3D projects</p><br><br><br><br><br><br><br>
+                           <img src="leetcode logo.png" alt="Leetcode logo"><br>
+                           <p>Since 2021 I have written solutions to hundreds of problems on competitive programming sites such as LeetCode, CodeWars, ProjectEuler and CodeWars demonstrating my problem solving skills. I don't just know how to write code in a programming language but can solve unfamiliar problems.</p>
+                           <br><br><br><br><br><br><br>
+                           
+                              <!--CPUs-->
+                            <h2>Designing CPUS:</h2></center>
+            
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                              <img src="redstone-computer.png" alt="redstone CPU">
+                              <div class="image-caption">8 Bit Redstone CPU I designed in Oct 2021</div>
+                            </div>
+                            <div class="image-wrapper">
+                              <img src="breadboard-computer.jpg" alt="Image 2">
+                              <div class="image-caption">Remains of 4-Bit ALU I designed in June 2018</div>
+                            </div>
+                          </div>
+                        
+                          <div class="description">
+                            <p>My interest for the innerworkings of a computer started in 2018, I wanted to understand how computers executed instructions on a fundemental level. I researched this thorougly and designed by own 4-Bit ALU. In 2021 during the lockdown I decided to me more ambitious and design a full fledged CPU using redstone, a wiring tool in minecraft, where components are limitless. This taught me much about how hardware works and gave me a great appreciation for the more low level aspects of programming. Helping me understand how computers behave better helps me optimize algorithms for them.</p>
+                          </div>
+            
+            
+            
+            
+                               
+                              <br><br><br><br><br><br>
+                                <center><div id="LightCraft-desc"></div><img src="lc text logo.png", width=60%></center><br>
+                                <h3><a href = "https://github.com/IronHead43/lcWebsite">Link to decaprated LightCraft Website (github repo)</a>.  LightCraft was a massive minecraft server with tens of thousands of members that I created, led, and did programming for between 2018-2021. It taught me a variety of skills including problem solving and leadership skills.</h3>
+                            </div>
+
+
+        </section>
+        <section id="section2"><h2>Professional Experience</h2><p>LeadPro LLC - I worked for LeadPro, an official minecraft partner, programming games for the minecraft marketplace between July 2020 to Sepember 2020.<br><br> (more coming soon....)</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="section3"><h2>Education</h2><p>I am currently studying A level Maths, Further Maths, Computer Science and am predicted 3A*s. (more coming soon...)</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div class="desc">
-        <b><p id="totalCommitsPython" style="margin-left:30%">Loading...</p></b>
-    </div>
-  </div>
-</div>
-        <div class="highlights">
-<!--Highlights-->
-            <center><h1 style="font-size:40px"><b>Highlights: </b></h1></center><br>
-            <center><h2>Designing Central Processing Units</h2>
-                <!--Gallery-->
-                <div class="row">
-                    <div class="column">
-                      <img src="breadboard-computer.jpg" alt="discrete transistor CPU on a breadboard" class="gallery">
-                    </div>
-                    <div class="column">
-                      <img src="redstone-computer.png" alt="redstone-CPU" class="gallery">
-                    </div>
-                    <div class="column">
-                      <img src="LcLiteRedstoneCPU.jpg" alt="redstone-CPU2" class="gallery">
-                    </div>
-                  </div>
-                  <br>
-                  <div id = "leftbox">
-                    Figure 0.1<br> The remains of a discrete 4-bit transistor breadboard CPU I built in about June 2018, when I was 10.
-                </div> 
-                  
-                <div id = "middlebox">
-                    Figure 0.2<br> A redstone computer (in a game called minecraft)<br> I designed in October 2021, when I was 13. You would actually be<br> suprised how hard it is to build a CPU in a 3D enviroment specs:<br> 8-bit, 2 registers, 8x8 screen, 8 bit binary display, ALU can only do adding,<br> 120 instructions, 40 lines of space to store programs
-                </div>
-                  
-                <div id = "rightbox">
-                    Figure 0.3<br> A 4-bit redstone CPU in minecraft I designed in 2019, when I was 11.
-                </div>
-<!--My Apps-->
-           <img src="jesting-jetpacker.png", width="60%"><br><iframe style="border-radius:15px;" width="560" height="315" src="https://www.youtube.com/embed/hHQfxLg0P-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Jesting Jetpacker is a game I created for the Google play store and got accepted on March 2021. <a href="https://play.google.com/store/apps/details?id=com.pixel43.jestingjetpacker">Here is the download page</a>. I created this in unity, coded the backend in C#</h3></center><br><br><br>
-                    <center><h1>Ball Hop</h1>
-                    <iframe width="560" height="315" style="border-radius:15px;" src="https://www.youtube.com/embed/E_doF_Gnd5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3>Ball Hop is a game I created for the Google play store and got accepted on 18th April 2021. <a href="https://play.google.com/store/apps/details?id=com.Pixel43.BallHop">Here is the download page</a>. I created this in unity, coded the backend in C#</h3><a href="https://sites.google.com/view/blocky-scratch/blocky", target="blank"><img src="Blockylogo.png", width=60%></a></center>
-                <h3><i>Blocky</i> a project by me and another user called papageigames from an online programming site, Scratch. We started in 2018 when I was 11, the idea was actually concieved on Dec 18, 2017 but papageigames never finished it he only created the block attaching to eachother script so i created drawing, made it so the scripts run, made saving, loading and a lot more and released it in 2018 when I was 12 on a hiatus from Lightcraft. <a href="https://scratch.mit.edu/projects/348937075/">link to original scratch project</a>. <br><br><center><img src="blocky screenshot.png", width=40%><br>
-                <!--LightCraft-->
-                    <center><div id="LightCraft-desc"></div><img src="lc text logo.png", width=60%></center><br>
-                    <h3><a href = "https://github.com/IronHead43/lcWebsite">Link to decaprated LightCraft Website (github repo)</a>.  LightCraft was a massive minecraft server that I created, led, and did programming for. It taught me a variety of skills including problem sovling and leadership skills. <a href="readmore.html#LightCraft-desc">read more</a></h3>
-                </div>
-        
-</center>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        const slides = gallery.getElementsByClassName('slide');
+        let currentIndex = 0;
+        let startX;
+        let scrollLeft;
+
+        function slide(direction) {
+            currentIndex = (currentIndex + direction + slides.length) % slides.length;
+            updateGallery();
+        }
+
+        function updateGallery() {
+            gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function autoSlide() {
+            slide(1);
+            setTimeout(autoSlide, 5000); // Wait 5 seconds before moving to the next slide
+        }
+
+        // Start the auto-sliding after a 5-second initial delay
+        setTimeout(autoSlide, 5000);
+
+        gallery.addEventListener('mousedown', (e) => {
+            startX = e.pageX - gallery.offsetLeft;
+            scrollLeft = gallery.scrollLeft;
+        });
+
+        gallery.addEventListener('mousemove', (e) => {
+            if (!startX) return;
+            const x = e.pageX - gallery.offsetLeft;
+            const walk = (x - startX) * 2;
+            const slideWidth = slides[0].offsetWidth;
+            const slidesMoved = Math.round(walk / slideWidth);
+            currentIndex = (currentIndex - slidesMoved + slides.length) % slides.length;
+            updateGallery();
+        });
+
+        gallery.addEventListener('mouseup', () => {
+            startX = null;
+        });
+
+        gallery.addEventListener('mouseleave', () => {
+            startX = null;
+        });
+
+        for (let slide of slides) {
+            slide.addEventListener('click', function() {
+                this.style.filter = 'brightness(0.6)';
+                setTimeout(() => {
+                    this.style.filter = 'brightness(1)';
+                    const targetId = this.getAttribute('data-target');
+                    document.getElementById(targetId).scrollIntoView({behavior: 'smooth'});
+                }, 300);
+            });
+        }
+    </script>
 </body>
-</div>
 </html>
