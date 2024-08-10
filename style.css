@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap');
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 a{
     text-decoration: none;
     color: #2BD6D5; 
@@ -191,14 +195,30 @@ margin-left:30px;
   }
   .video-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    border-radius:15px;
-  }
+    gap: 20px;
+}
 
-  .video {
-    width: 48%; /* Adjust the width as needed */
-    margin: 0;
-  }
+.video {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .video {
+        flex-basis: calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
 
  nav {
       white-space: nowrap;
