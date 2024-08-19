@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insecure Page Example</title>
+</head>
+<body>
+    <h1>Welcome to My Insecure Page</h1>
+    <p>Leave a comment below:</p>
+
+    <form action="" method="POST">
+        <label for="comment">Your Comment:</label><br>
+        <input type="text" id="comment" name="comment" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Comments:</h2>
+    <div id="comments">
+        <!-- This is where user comments will be displayed -->
+        <!-- Imagine the server is echoing the user's input directly into the HTML -->
+        <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                // Directly displaying user input without sanitization
+                echo $_POST['comment'];
+            }
+        ?>
+    </div>
+</body>
+</html>
