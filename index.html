@@ -8,7 +8,7 @@
         <!--Link to CSS --> 
         <link rel="stylesheet" href="style.css">
         <!--Link to javascript-->
-          <script src="commits.js"></script>
+          <script src="main.js"></script>
       <!--title-->
       <title>My Portfolio</title>
       <meta name="description" content="my programming portfolio">
@@ -20,14 +20,13 @@
        <div class="intro" width="100%">
         <br><br><br><br>
         <center><a class="contact" href="https://discord.com/channels/@me/635745269979283456", target="blank"><i class="fa-brands fa-discord contact", style="color:white"></i></a> 
-            <a class="contact" href="https://twitter.com/darthmakroth", target="blank"><i class="fa-brands fa-twitter contact", style="color:white"></i></a>
-            <a class="contact" href="https://github.com/SamMiller3", target="blank"><i class="fa-brands fa-github contact", style="color:white"></i></a>
             <a class="contact" href="https://play.google.com/store/apps/dev?id=8186313019301448070&hl=en_GB&gl=US", target="blank"><i class="fa-brands fa-google-play contact"></i></a>
+            <a class="contact" href="https://github.com/SamMiller3", target="blank"><i class="fa-brands fa-github contact", style="color:white"></i></a>
             <a class="contact" href="mailto:samjmv003@gmail.com", target="blank"><i class="fa-solid fa-envelope contact", style="color:white"></i></a>
             <a href="https://www.linkedin.com/in/samuel-miller-abb232204/", target="blank"><i class="fa-brands fa-linkedin contact", style="color:white;"></i></a></center>
             <!--Intro --> 
             <center><h1 style="color:white">My Portfolio:</h1>
-        <p>Hi! my name is Sam. I am a programmer, I am proficient in python, I can also do a moderate amount of c#. I designed this website in pure html,css,js.<br> I have undertaken several personal projects over the years from designing my own mobile games in Unity, to designing my own neural network in python.<br></p>
+        <p>I am Sam, and I enjoy programming in Python, Rust and C#, I also love maths and problem solving. My particular areas of interest currently include machine learning research and cryptography. Currently studying Computer Science and Artificial Intelligence at the University of Bath</p>
     </center></div>
     <!--Gallery-->
     <div class="gallery-container">
@@ -45,8 +44,9 @@
                 <p>Click Here to see my education.</p>
             </div>
         </div>
-        <button class="nav-button prev" onclick="slide(-1)">&lt;</button>
-        <button class="nav-button next" onclick="slide(1)">&gt;</button>
+        <button class="nav-button prev">&lt;</button>
+        <button class="nav-button next">&gt;</button>
+
     </div>
 
     <div class="content" style="background-color:#f5f5f5; color:#333333">
@@ -54,13 +54,19 @@
           <div class="personal-projects">
             <!--Personal Projects-->
                         <center><h1 style="font-size:40px; color:#2c3e50"><b>Personal Projects: </b></h1><br>
-                          <!--Neural Networks-->
-                          <img src="tensorflow.png", alt="tensorflow logo"><br>
-                          <p>For my Extended Project Qualification (EPQ) I designed a Recurrent Neural Network in python using the tensorflow library to predict trends in the stock market. I then wrote a report comparing it to different more traditional regression models. I have written several other smaller projects using tensorflow such as one to predict primes and one to predict text.</p>
-                            <br><br><br><br>
-                            
+        
                             <!--My Apps-->
-                            <h2>Mobile Apps:</h2>
+                            <h2>Unity C# Projects:</h2>
+
+                            <h3>Quasar Quest</h3>
+                            <centre>
+                                <div class="video">
+                                  <iframe style="border-radius:15px;" width="560" height="315" src="https://www.youtube.com/embed/H1mh_E8JXX0?si=FVyHunhXLPLGhEu_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </centre>
+                                <p>Quasar Quest is set in a procedurally generated galaxy, you dodge cosmic obstacles to get a higher score, get coins to buy upgrades for your ship or new ship skins. You can also complete infinitely many automatically generated missions for coins. I made this the summer of 2024.</p>
+                            <br>
+                            <h3>Mobile Apps</h3>
                             <div class="video-container">
                                 <div class="video">
                                   <iframe style="border-radius:15px;" width="560" height="315" src="https://www.youtube.com/embed/1H9mcVTjLgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -70,108 +76,43 @@
                                   <iframe width="560" height="315" style="border-radius:15px;" src="https://www.youtube.com/embed/E_doF_Gnd5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                               </div>
-                              <h3>In 2021 I created several mobile games for the mobile Android platform, available on the google play store. I programmed these games in C#/Unity. This taught me skills in mobile app development, releasing different versions of games for the google playstore, and optimizing apps across devices. The above games are available on the google play store for free. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.pixel43.jestingjetpacker">Jesting Jetpacker</a>. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.Pixel43.BallHop">Ball Hop</a>.</h3>
+                              <p>In 2021 I created several mobile games for the mobile Android platform, available on the google play store. I programmed these games in C#/Unity. This taught me skills in mobile app development, releasing different versions of games for the google playstore, and optimizing apps across devices. The above games are available on the google play store for free. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.pixel43.jestingjetpacker">Jesting Jetpacker</a>. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.Pixel43.BallHop">Ball Hop</a>.
+                            </p>
                            <br>
                            
-                           <a href="https://github.com/IronHead43/CSharp" target="blank"><img class="unity-button" src="cSharpUnity.png" alt="My C#/Unity3D projects" style="width:40%;"></a>
+                           <a href="https://github.com/IronHead43/CSharp" target="blank"><img class="github-button" src="cSharpUnity.png" alt="My C#/Unity projects" style="width:40%;"></a>
                            <br><br>
-                           <b><p id="totalCommitsCSharp">Loading...</p></b>
-                           <p >A repository of my C#/Unity3D projects</p><br><br><br><br><br><br><br>
-                           <img src="leetcode logo.png" alt="Leetcode logo"><br>
-                           <p>Since 2021 I have written solutions to hundreds of problems on competitive programming sites such as LeetCode, CodeWars, ProjectEuler and CodeWars demonstrating my problem solving skills. I don't just know how to write code in a programming language but can solve unfamiliar problems.</p>
+                           <p class="small-text">A GitHub repository of my C#/Unity3D projects code</p><br><br><br><br><br><br><br>
+                           <img src="project euler.png" alt="project euler logo"><br>
+                           <p>I enjoy writing solutions to programming problems on websites such as Project Euler, CodeForces and LeetCode. I love the problem solving for the higher number Project Euler problems, utilising concepts from mathematics such as number theory or even graph theory. I also enjoy occasionaly joining programming competitions on CodeForces. I tend to write my solutions in Python but I have started writing several in Rust for its efficiency.</p>
+                           <a href="https://github.com/SamMiller3/programming-challenges" target="blank"><img class="github-button" src="programming challenges.png" alt="My C#/Unity3D projects" style="width:40%;"></a>
+                           <br><p class="small-text">A GitHub repository of my solutions to different programming challenges</p>
                            <br><br><br><br><br><br><br>
-                           
-                              <!--CPUs-->
-                            <h2>Designing CPUS:</h2></center>
-            
-                        <div class="image-container">
-                            <div class="image-wrapper">
-                              <img src="redstone-computer.png" alt="redstone CPU">
-                              <div class="image-caption">8 Bit Redstone CPU I designed in Oct 2021</div>
-                            </div>
-                            <div class="image-wrapper">
-                              <img src="breadboard-computer.jpg" alt="Image 2">
-                              <div class="image-caption">Remains of 4-Bit ALU I designed in June 2018</div>
-                            </div>
-                          </div>
+                           <h2>Toy Interpreter</h2>
+                           <p>In July 2025 I wrote a Toy Interpreter in Python from scratch without referencing formal grammar theory, abstract syntax trees or existing interpreter architectures for educational purposes. My aim was to discover 
+                            fundemental compiler and interpreter concepts through hands-on creative problem solving and experimentation to provide a deeper insight for the <i>why</i> formal methods exist rather than copying them from textbooks.<br>
+                            <br><br> <b>Features at a glance:</b>
+                            </p>
+
+                            <ul style="display: inline-block; text-align: left;">
+                                <li>Expression evaluation with proper operator precedence (using Reverse Polish Notation)</li>
+                                <li>Nested control structures with stack-based management</li>
+                                <li>Multi-pass design: tokenization → parsing → execution</li>
+                                <li>Dynamic typing with explicit type declarations</li>
+                                <li>Simple but complete language supporting variables, conditionals, loops (via goto), and I/O</li>
+                            </ul>
+                            <p>
+                            Some example programs included a binary search guessing game, the Euclidean algorithm, calculating the first n Fibonacci numbers, approximating Eulers number to arbitrary precision amongst others.
+                            </p>
                         
-                          <div class="description">
-                            <p>My interest for the innerworkings of a computer started in 2018, I wanted to understand how computers executed instructions on a fundemental level. I researched this thorougly and designed by own 4-Bit ALU. In 2021 during the lockdown I decided to me more ambitious and design a full fledged CPU using redstone, a wiring tool in minecraft, where components are limitless. This taught me much about how hardware works and gave me a great appreciation for the more low level aspects of programming. Helping me understand how computers behave better helps me optimize algorithms for them.</p>
-                          </div>
-            
-            
-            
-            
-                               
-                              <br><br><br><br><br><br>
-                              <!--Lightcraft-->
-                                <center><div id="LightCraft-desc"></div><img src="lc text logo.png", width=60%></center><br>
-                                <h3><a href = "https://github.com/IronHead43/lcWebsite">Link to decaprated LightCraft Website (github repo)</a>.  LightCraft was a massive minecraft server with tens of thousands of members that I created, led, and did programming for between 2018-2021. It taught me a variety of skills including problem solving and leadership skills.</h3>
-                            </div>
+                           <a href="https://github.com/IronHead43/CSharp" target="blank"><img class="github-button" src="Toy Interpreter.png" alt="My C#/Unity3D projects" style="width:40%;"></a>
+                           <br><br><p class="small-text">A GitHub repository of the code for the interpreter as well as the example programs</p>
+                        </center>
 
 
         </section>
-        <section id="section2"><h2>Professional Experience</h2><p>LeadPro LLC - I worked for LeadPro, an official minecraft partner, programming games for the minecraft marketplace between July 2020 to Sepember 2020.<br><br> (more coming soon....)</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <section id="section3"><h2>Education</h2><p>I am currently studying A level Maths, Further Maths, Computer Science and am predicted 3A*s. (more coming soon...)</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="section2"><h2>Professional Experience</h2><p>Nothing to see yet..</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="section3"><h2>Education</h2><p>Nothing to see yet..</p></section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-
-    <script>
-        const gallery = document.getElementById('gallery');
-        const slides = gallery.getElementsByClassName('slide');
-        let currentIndex = 0;
-        let startX;
-        let scrollLeft;
-
-        function slide(direction) {
-            currentIndex = (currentIndex + direction + slides.length) % slides.length;
-            updateGallery();
-        }
-
-        function updateGallery() {
-            gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        function autoSlide() {
-            slide(1);
-            setTimeout(autoSlide, 5000); // Wait 5 seconds before moving to the next slide
-        }
-
-        // Start the auto-sliding after a 5-second initial delay
-        setTimeout(autoSlide, 5000);
-
-        gallery.addEventListener('mousedown', (e) => {
-            startX = e.pageX - gallery.offsetLeft;
-            scrollLeft = gallery.scrollLeft;
-        });
-
-        gallery.addEventListener('mousemove', (e) => {
-            if (!startX) return;
-            const x = e.pageX - gallery.offsetLeft;
-            const walk = (x - startX) * 2;
-            const slideWidth = slides[0].offsetWidth;
-            const slidesMoved = Math.round(walk / slideWidth);
-            currentIndex = (currentIndex - slidesMoved + slides.length) % slides.length;
-            updateGallery();
-        });
-
-        gallery.addEventListener('mouseup', () => {
-            startX = null;
-        });
-
-        gallery.addEventListener('mouseleave', () => {
-            startX = null;
-        });
-
-        for (let slide of slides) {
-            slide.addEventListener('click', function() {
-                this.style.filter = 'brightness(0.6)';
-                setTimeout(() => {
-                    this.style.filter = 'brightness(1)';
-                    const targetId = this.getAttribute('data-target');
-                    document.getElementById(targetId).scrollIntoView({behavior: 'smooth'});
-                }, 300);
-            });
-        }
-    </script>
 </body>
 </html>
