@@ -3,120 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- fontawesome -->
-        <script src="https://kit.fontawesome.com/0bfe4ad5c1.js" crossorigin="anonymous"></script>
-        <!--Link to CSS --> 
-        <link rel="stylesheet" href="style.css">
-        <!--Link to javascript-->
-          <script src="main.js"></script>
-      <!--title-->
-      <title>My Portfolio</title>
-      <meta name="description" content="my programming portfolio">
+    <script src="https://kit.fontawesome.com/0bfe4ad5c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <meta name="description" content="my programming portfolio">
 </head>
 <body>
-  <div class="wrapper">
-    <body>
-        <!--contacts-->
-       <div class="intro" width="100%">
-        <br><br><br><br>
-        <center><a class="contact" href="https://discord.com/channels/@me/635745269979283456", target="blank"><i class="fa-brands fa-discord contact", style="color:white;  outline: 2px solid #2c3e50;"></i></a> 
+    <!-- Intro Section -->
+    <div class="intro">
+        <div class="social-links">
+                    <center><a class="contact" href="https://discord.com/channels/@me/635745269979283456", target="blank"><i class="fa-brands fa-discord contact", style="color:white;  outline: 2px solid #2c3e50;"></i></a> 
             <a class="contact" href="https://play.google.com/store/apps/dev?id=8186313019301448070&hl=en_GB&gl=US", target="blank"><i class="fa-brands fa-google-play contact" style=" outline: 2px solid #2c3e50;"></i></a>
             <a class="contact" href="https://github.com/SamMiller3", target="blank"><i class="fa-brands fa-github contact", style="color:white;outline: 2px solid #2c3e50;"></i></a>
             <a class="contact" href="mailto:samjmv003@gmail.com", target="blank"><i class="fa-solid fa-envelope contact", style="color:white; outline: 2px solid #2c3e50;"></i></a>
             <a href="https://www.linkedin.com/in/samuel-miller-abb232204/", target="blank"><i class="fa-brands fa-linkedin contact", style="color:white; outline: 2px solid #2c3e50;"></i></a></center>
-            <center><h1 style="color:white">My Portfolio:</h1>
-        <p>I am Sam, and I enjoy programming in Python, Rust and C#, I also love maths and problem solving. My particular areas of interest currently include machine learning research and cryptography.
-        Some hobbies I have include philosophy, films and reading. I am currently studying Computer Science and Artificial Intelligence at the University of Bath.
-        </p>
-    </center></div>
-    <!--Gallery-->
+        </div>
+        
+        <h1>My Portfolio:</h1>
+        <p>I am Sam, and I enjoy programming in Python, Rust and C#, I also love maths and problem solving. My particular areas of interest currently include machine learning research and cryptography. Some hobbies I have include philosophy, films and reading. I am currently studying Computer Science and Artificial Intelligence at the University of Bath.</p>
+    </div>
+
+    <!-- Gallery -->
     <div class="gallery-container">
         <div class="gallery" id="gallery">
-            <div class="slide" style="background-color: #2c3e50" data-target="section1">
-                <h2 style="color:white">Personal Projects:</h2>
+            <div class="slide" style="background-color: #2c3e50;" data-target="section1">
+                <h2>Personal Projects:</h2>
                 <p>Click Here to see Personal Projects I have done</p>
             </div>
             <div class="slide" style="background-color: #34495e;" data-target="section2">
-                <h2 style="color:white">Professional Experience:</h2>
+                <h2>Professional Experience:</h2>
                 <p>Click Here to see my Work experience</p>
             </div>
             <div class="slide" style="background-color: #4C6B8B;" data-target="section3">
-                <h2 style="color:white">Education:</h2>
+                <h2>Education:</h2>
                 <p>Click Here to see my education.</p>
             </div>
         </div>
         <button class="nav-button prev">&lt;</button>
         <button class="nav-button next">&gt;</button>
-
     </div>
 
-    <div class="content" style="background-color:#f5f5f5; color:#333333">
+    <!-- Content -->
+    <div class="content">
         <section id="section1">
-          <div class="personal-projects">
-            <!--Personal Projects-->
-                        <center><h1 style="font-size:40px; color:#2c3e50"><b>Personal Projects: </b></h1><br>
-        
-                            <!--My Apps-->
-                            <h2>Unity C# Projects:</h2>
+            <center>
+                <h1><b>Personal Projects:</b></h1>
 
-                            <h3>Quasar Quest</h3>
-                            <centre>
-                                <div class="video">
-                                  <iframe style="border-radius:15px;" width="560" height="315" src="https://www.youtube.com/embed/H1mh_E8JXX0?si=FVyHunhXLPLGhEu_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </centre>
-                                <p>Quasar Quest is set in a procedurally generated galaxy, you dodge cosmic obstacles to get a higher score, get coins to buy upgrades for your ship or new ship skins. You can also complete infinitely many automatically generated missions for coins. I made Quasar Quest in Unity C# in the summer of 2024.</p>
-                            <br>
-                            <h3>Mobile Apps</h3>
-                            <div class="video-container">
-                                <div class="video">
-                                  <iframe style="border-radius:15px;" width="560" height="315" src="https://www.youtube.com/embed/1H9mcVTjLgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                
-                                <div class="video">
-                                  <iframe width="560" height="315" style="border-radius:15px;" src="https://www.youtube.com/embed/E_doF_Gnd5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                              </div>
-                              <p>In 2021 I created several mobile games for the mobile Android platform, available on the google play store. I programmed these games in C#/Unity. This taught me skills in mobile app development, releasing different versions of games for the google playstore, and optimizing apps across devices. The above games are available on the google play store for free. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.pixel43.jestingjetpacker">Jesting Jetpacker</a>. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.Pixel43.BallHop">Ball Hop</a>.
-                            </p>
-                           <br>
-                           
-                           <a href="https://github.com/IronHead43/CSharp" target="blank"><img class="github-button" src="cSharpUnity.png" alt="My C#/Unity projects" style="width:40%;"></a>
-                           <br><br>
-                           <p class="small-text">A GitHub repository of my Unity C# projects code</p><br><br><br><br><br><br><br>
-                           <img src="project euler.png" alt="project euler logo"><br>
-                           <p>I enjoy writing solutions to programming problems on websites such as Project Euler, CodeForces and LeetCode. I love the problem solving for the higher number Project Euler problems, utilising concepts from mathematics such as number theory or even graph theory. I also enjoy occasionaly joining programming competitions on CodeForces. I tend to write my solutions in Python but I have started writing several in Rust for its efficiency.</p>
-                           <a href="https://github.com/SamMiller3/programming-challenges" target="blank"><img class="github-button" src="programming challenges.png" alt="My C#/Unity3D projects" style="width:40%;"></a>
-                           <br><p class="small-text">A GitHub repository of my solutions to different programming challenges</p>
-                           <br><br><br><br><br><br><br>
-                           <h2>Toy Interpreter</h2>
-                           <p>In July 2025 I wrote a Toy Interpreter in Python from scratch without referencing formal grammar theory, abstract syntax trees or existing interpreter architectures for educational purposes. My aim was to discover 
-                            fundemental compiler and interpreter concepts through hands-on creative problem solving and experimentation to provide a deeper insight for the <i>why</i> formal methods exist rather than copying them from textbooks.<br>
-                            <br><br> <b>Features at a glance:</b>
-                            </p>
+                <h2>Unity C# Projects:</h2>
 
-                            <ul style="display: inline-block; text-align: left;">
-                                <li>Expression evaluation with proper operator precedence (using Reverse Polish Notation)</li>
-                                <li>Nested control structures with stack-based management</li>
-                                <li>Multi-pass design: tokenization → parsing → execution</li>
-                                <li>Dynamic typing with explicit type declarations</li>
-                                <li>Simple but complete language supporting variables, conditionals, loops (via goto), and I/O</li>
-                            </ul>
-                            <p>
-                            Some example programs included a binary search guessing game, the Euclidean algorithm, calculating the first n Fibonacci numbers, approximating Eulers number to arbitrary precision amongst others.
-                            </p>
-                        
-                           <a href="https://github.com/IronHead43/CSharp" target="blank"><img class="github-button" src="Toy Interpreter.png" alt="My C#/Unity3D projects" style="width:40%;"></a>
-                           <br><br><p class="small-text">A GitHub repository of the code for the interpreter as well as the example programs</p>
-                        </center>
+                <h3>Quasar Quest</h3>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/H1mh_E8JXX0?si=FVyHunhXLPLGhEu_" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+                <p>Quasar Quest is set in a procedurally generated galaxy, you dodge cosmic obstacles to get a higher score, get coins to buy upgrades for your ship or new ship skins. You can also complete infinitely many automatically generated missions for coins. I made Quasar Quest in Unity C# in the summer of 2024.</p>
+                <br>
 
+                <h3>Mobile Apps</h3>
+                <div class="video-container">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/1H9mcVTjLgU" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/E_doF_Gnd5k" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <p>In 2021 I created several mobile games for the mobile Android platform, available on the google play store. I programmed these games in C#/Unity. This taught me skills in mobile app development, releasing different versions of games for the google playstore, and optimizing apps across devices. The above games are available on the google play store for free. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.pixel43.jestingjetpacker">Jesting Jetpacker</a>. Here is the download page for <a href="https://play.google.com/store/apps/details?id=com.Pixel43.BallHop">Ball Hop</a>.</p>
+                <br>
+                
+                <a href="https://github.com/IronHead43/CSharp" target="_blank">
+                    <img class="github-button" src="cSharpUnity.png" alt="My C#/Unity projects">
+                </a>
+                <p class="small-text">A GitHub repository of my Unity C# projects code</p>
+                <br><br><br>
 
+                <img src="project euler.png" alt="project euler logo" style="max-width: 400px; margin: 0 auto;">
+                <p>I enjoy writing solutions to programming problems on websites such as Project Euler, CodeForces and LeetCode. I love the problem solving for the higher number Project Euler problems, utilising concepts from mathematics such as number theory or even graph theory. I also enjoy occasionaly joining programming competitions on CodeForces. I tend to write my solutions in Python but I have started writing several in Rust for its efficiency.</p>
+                <a href="https://github.com/SamMiller3/programming-challenges" target="_blank">
+                    <img class="github-button" src="programming challenges.png" alt="My programming challenges">
+                </a>
+                <p class="small-text">A GitHub repository of my solutions to different programming challenges</p>
+                <br><br><br>
+
+                <h2>Toy Interpreter</h2>
+                <p>In July 2025 I wrote a Toy Interpreter in Python from scratch without referencing formal grammar theory, abstract syntax trees or existing interpreter architectures for educational purposes. My aim was to discover fundemental compiler and interpreter concepts through hands-on creative problem solving and experimentation to provide a deeper insight for the <i>why</i> formal methods exist rather than copying them from textbooks.</p>
+                <br><br>
+                <p><b>Features at a glance:</b></p>
+
+                <ul>
+                    <li>Expression evaluation with proper operator precedence (using Reverse Polish Notation)</li>
+                    <li>Nested control structures with stack-based management</li>
+                    <li>Multi-pass design: tokenization → parsing → execution</li>
+                    <li>Dynamic typing with explicit type declarations</li>
+                    <li>Simple but complete language supporting variables, conditionals, loops (via goto), and I/O</li>
+                </ul>
+                <p>Some example programs included a binary search guessing game, the Euclidean algorithm, calculating the first n Fibonacci numbers, approximating Eulers number to arbitrary precision amongst others.</p>
+            
+                <a href="https://github.com/IronHead43/CSharp" target="_blank">
+                    <img class="github-button" src="Toy Interpreter.png" alt="My Toy Interpreter">
+                </a>
+                <p class="small-text">A GitHub repository of the code for the interpreter as well as the example programs</p>
+            </center>
         </section>
-        <section id="section2"><h2>Professional Experience</h2><h3>Bath Reinforcement Learning Lab: Research Intern (September 2025 - Current)</h3><p>Working on Skill Hierarchies in Reinforcement Learning, specifically focussing on temporal abstraction and intrinsic motivation using graph algorithms.
-Attend research meetings, help code environments, organise the codebase and read relevant papers.
-<br><b>Skills learnt/used:</b> Technical paper analysis, version control (Git), experimental design and testing, debugging complex
-algorithms, research documentation, critical evaluation of methodologies.</p></section><br><br><br><br>
-        <section id="section3"><h2>Education</h2><p>Currently a student at Bath University studying Computer Science and Artificial Intelligence. <br>
-        A Levels: At A Levels I achieved A*A*AA in Maths, Computer Science, Further Maths and an EPQ in machine learning. I achieved the top mark in my school in Maths and Computer Science.</p></section>    </div>
+
+        <section id="section2">
+            <h2>Professional Experience</h2>
+            <h3>Bath Reinforcement Learning Lab: Research Intern (September 2025 - Current)</h3>
+            <p>Working on Skill Hierarchies in Reinforcement Learning, specifically focussing on temporal abstraction and intrinsic motivation using graph algorithms. Attend research meetings, help code environments, organise the codebase and read relevant papers.</p>
+            <p><b>Skills learnt/used:</b> Technical paper analysis, version control (Git), experimental design and testing, debugging complex algorithms, research documentation, critical evaluation of methodologies.</p>
+        </section>
+
+        <section id="section3">
+            <h2>Education</h2>
+            <p>Currently a student at Bath University studying Computer Science and Artificial Intelligence.</p>
+            <p>A Levels: At A Levels I achieved A*A*AA in Maths, Computer Science, Further Maths and an EPQ in machine learning. I achieved the top mark in my school in Maths and Computer Science.</p>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const gallery = document.getElementById('gallery');
+            const slides = gallery.getElementsByClassName('slide');
+            const prevButton = document.querySelector('.nav-button.prev');
+            const nextButton = document.querySelector('.nav-button.next');
+            let currentIndex = 0;
+
+            function slide(direction) {
+                currentIndex = (currentIndex + direction + slides.length) % slides.length;
+                updateGallery();
+            }
+
+            function updateGallery() {
+                gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            function autoSlide() {
+                slide(1);
+                setTimeout(autoSlide, 5000);
+            }
+
+            prevButton.addEventListener('click', () => slide(-1));
+            nextButton.addEventListener('click', () => slide(1));
+
+            setTimeout(autoSlide, 5000);
+
+            for (let slideEl of slides) {
+                slideEl.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
